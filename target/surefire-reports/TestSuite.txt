@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 6, Errors: 0, Skipped: 4, Time elapsed: 4.062 s <<< FAILURE! - in TestSuite
+Academy.validateNavigationBar.intialize  Time elapsed: 3.494 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Srini Laptop\E2EProject\src\main\java\resources\chromedriver.exe
+	at Academy.validateNavigationBar.intialize(validateNavigationBar.java:22)
+
+Academy.validateNavigationBar.basePageNavigation  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.NullPointerException
+
+Academy.HomePage.basePageNavigation  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Srini Laptop\E2EProject\src\main\java\resources\chromedriver.exe
+	at Academy.HomePage.basePageNavigation(HomePage.java:22)
+
+Academy.HomePage.basePageNavigation  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Srini Laptop\E2EProject\src\main\java\resources\chromedriver.exe
+	at Academy.HomePage.basePageNavigation(HomePage.java:22)
+
+Academy.validateTitle.intialize  Time elapsed: 0.106 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Srini Laptop\E2EProject\src\main\java\resources\chromedriver.exe
+	at Academy.validateTitle.intialize(validateTitle.java:22)
+
+Academy.validateTitle.basePageNavigation  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+

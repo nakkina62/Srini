@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.ExtentReportsListeners"/>
+  </listeners>
+  <test parallel="none" name="Validating NavigationBar(failed)">
+    <classes>
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="intialize"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+      <class name="Academy.validateTitle">
+        <methods>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- Academy.validateTitle -->
+    </classes>
+  </test> <!-- Validating NavigationBar(failed) -->
+  <test parallel="none" name="Validate Homepage(failed)">
+    <classes>
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+      <class name="Academy.validateTitle">
+        <methods>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- Academy.validateTitle -->
+    </classes>
+  </test> <!-- Validate Homepage(failed) -->
+  <test parallel="none" name="Validate Title(failed)">
+    <classes>
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+      <class name="Academy.validateTitle">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- Academy.validateTitle -->
+    </classes>
+  </test> <!-- Validate Title(failed) -->
+</suite> <!-- Failed suite [Suite] -->
